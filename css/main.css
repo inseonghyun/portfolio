@@ -25,12 +25,6 @@ body {
 nav {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-}
-
-nav h1 {
-    justify-content: center;
-    align-items: center;
 }
 
 nav h1 img {
@@ -40,20 +34,19 @@ nav h1 img {
 
 nav ul {
     display: flex;
-    align-items: flex-start;
 }
 
 nav ul li {
+    list-style: none;
     display: flex;
     padding: 12px 24px;
-    justify-content: center;
     align-items: center;
-    gap: 10px;
 }
 
 /* header */
 .banner {
     width: 100%;
+    height: 100%;
     padding-bottom: 212px;
 }
 
@@ -64,7 +57,6 @@ nav ul li {
 .banner .main_text {
     display: inline-flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 24px;
     padding-top: 178px;
     padding-right: 136px;
@@ -93,34 +85,27 @@ nav ul li {
 .banner .main_text>p {
     width: 648px;
     color: var(--gray-900, #132238);
-    /* Display */
     font-family: Work Sans;
     font-size: 72px;
     font-style: normal;
     font-weight: 600;
     line-height: 84px;
     padding: 24px 0
-        /* 116.667% */
-
 }
 
 .banner .main_text .main_button {
     display: flex;
-    align-items: flex-start;
     gap: 24px;
 }
 
 .banner .main_text .main_button p {
-    display: flex;
     padding: 12px 24px;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
     border-radius: 4px;
     background: var(--primary-500, #A53DFF);
+}
 
+.banner .main_text .main_button p a {
     color: #FFF;
-    /* Body/Regular/600 */
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -141,11 +126,8 @@ nav ul li {
 
 /* banner */
 .about_me {
-    display: flex;
+    width: 100%;
     height: 904px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
 
 }
 
@@ -231,13 +213,11 @@ nav ul li {
 }
 
 .r_text dd {
-    display: flex;
     padding: 0px 23px;
-    flex-direction: column;
-    align-items: flex-start;
     padding-bottom: 8px;
-    align-self: stretch;
 }
+
+/* about me */
 
 
 
@@ -284,11 +264,7 @@ nav ul li {
     flex-shrink: 0;
 }
 
-.project .r_text .text_box {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
+
 
 .project .r_text .text_box p {
     display: flex;
@@ -300,7 +276,8 @@ nav ul li {
     font-style: normal;
     font-weight: 600;
     line-height: 84px;
-    transform: translateX(-30px)
+    transform: translateX(-30px);
+    padding-bottom: 12px;
 }
 
 .project .r_text .text_box p>span {
@@ -312,7 +289,6 @@ nav ul li {
     line-height: 24px;
 }
 
-/* about me */
 
 
 
@@ -338,22 +314,19 @@ nav ul li {
     line-height: 31px;
 }
 
+
 .text_box ul .icon_set img {
     padding-left: 16px;
 }
 
 .p_button {
     display: flex;
-    align-items: flex-start;
     gap: 20px;
-    align-self: stretch;
 }
 
 .p_button li {
-    display: flex;
+    display: block;
     padding: 12px 24px;
-    justify-content: center;
-    align-items: center;
     border-radius: 4px;
     border: 1px solid var(--primary-500, #A53DFF);
     background: var(--gray-white, #FFF);
@@ -361,6 +334,8 @@ nav ul li {
 }
 
 .p_button li a {
+    display: flex;
+    align-items: center;
     color: var(--primary-500, #A53DFF);
     font-family: Work Sans;
     font-size: 16px;
