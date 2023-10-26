@@ -6,11 +6,11 @@ body {
 
 .inner {
     width: 100%;
-    max-width: 1920px;
-    min-width: 320px;
+    max-width: 192rem;
+    min-width: 32rem;
     margin: 0 auto;
     height: inherit;
-    padding: 20px 300px;
+    padding: 0 30rem;
 
 }
 
@@ -20,6 +20,14 @@ body {
 
 .fr {
     float: right;
+}
+
+header {
+    background: #fff;
+}
+
+header .inner {
+    padding: 2rem 30rem;
 }
 
 nav {
@@ -47,7 +55,7 @@ nav ul li {
 .banner {
     width: 100%;
     height: 100%;
-    padding-bottom: 212px;
+    padding-bottom: 22.2rem;
 }
 
 .banner .inner {
@@ -122,24 +130,87 @@ nav ul li {
     background-size: 536px 636px;
     box-shadow: 0px 24px 116px 0px rgba(43, 56, 76, 0.09);
     margin-top: 126px;
+    position: relative;
+}
+
+.banner .banner_img::before {
+    position: absolute;
+    content: '';
+    width: 87.1213rem;
+    height: 87.1213rem;
+    transform: rotate(-130.444deg);
+    flex-shrink: 0;
+    border-radius: 87.1213rem;
+    background: rgba(218, 77, 241, 0.40);
+    filter: blur(300px);
+    top: -89rem;
+    right: -59rem;
+    z-index: -9999;
+
+}
+
+.banner .banner_img::after {
+    content: '';
+    position: absolute;
+    width: 104.4316rem;
+    height: 104.4316rem;
+    transform: rotate(-130.444deg);
+    flex-shrink: 0;
+    border-radius: 104.4316rem;
+    background: rgba(196, 245, 233, 0.70);
+    filter: blur(300px);
+    bottom: -58rem;
+    right: -94rem;
+    z-index: -9999;
+
 }
 
 /* banner */
 .about_me {
-    width: 100%;
-    height: 904px;
-
+    display: flex;
+    height: 90.4rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
 }
 
 .about_me .content {
     display: flex;
-    padding: 112px;
+    padding: 11.2rem;
     justify-content: center;
     align-items: center;
-    gap: 136px;
+    gap: 13.6rem;
     border-radius: 16px;
     background: var(--gray-white, #FFF);
     box-shadow: 0px 36px 105px 0px rgba(43, 56, 76, 0.10);
+    position: relative;
+}
+
+.about_me .content::before {
+    content: '';
+    width: 54.1rem;
+    height: 22.6rem;
+    transform: rotate(-30deg);
+    flex-shrink: 0;
+    border-radius: 54.1rem;
+    background: linear-gradient(182deg, #FFDFA8 -157.44%, rgba(255, 226, 176, 0.96) -157.4%, rgba(255, 234, 198, 0.67) 216.94%, rgba(250, 211, 144, 0.80) 216.94%);
+    filter: blur(100px);
+    position: absolute;
+    right: 117rem;
+    bottom: 11rem;
+    z-index: -9999;
+}
+
+.about_me .content::after {
+    content: '';
+    position: absolute;
+    width: 148.1rem;
+    height: 148.1rem;
+    flex-shrink: 0;
+    border-radius: 148.1rem;
+    background: linear-gradient(182deg, rgba(255, 234, 198, 0.20) -157.44%, rgba(255, 234, 198, 0.14) 216.94%, rgba(255, 234, 198, 0.13) 216.94%);
+    filter: blur(350px);
+    z-index: -9999;
 }
 
 .about_me .content .l_img {
@@ -218,7 +289,6 @@ nav ul li {
 }
 
 /* about me */
-
 
 
 
