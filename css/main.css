@@ -304,61 +304,94 @@ nav ul li {
     font-weight: 700;
 }
 
+
 .projects .project {
     display: flex;
-    width: 1317px;
-    padding: 24px;
+    width: 132rem;
+    padding: 7rem 0rem;
     justify-content: space-between;
-    align-items: center;
-    border-radius: 8px;
-    border: 1px solid var(--gray-100, #E6E8EB);
-    background: var(--gray-white, #FFF);
+    align-items: flex-start;
 }
 
 .project .l_img {
-    width: 648px;
-    height: 500px;
+    width: 74.9rem;
+    height: 56.7rem;
     flex-shrink: 0;
-    border-radius: 8px;
-    background: url(../images/project.jpg), lightgray 50% / cover no-repeat;
+    position: relative;
 }
+
+.project .l_img img {
+    position: absolute;
+}
+
+.project .l_img img.pad {
+    bottom: 0;
+    left: -3.9rem;
+}
+
+.project .l_img img.phone {
+    bottom: 0;
+    right: 3rem;
+}
+
 
 .project .r_text {
     display: flex;
-    width: 529px;
-    height: 367px;
+    height: 56.3rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.project .r_text .text_box {
+    display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    gap: 20px;
-    flex-shrink: 0;
+    gap: 1.2rem;
+    padding-left: 4rem;
+    position: relative;
 }
-
 
 
 .project .r_text .text_box p {
     display: flex;
+    padding-bottom: 1rem;
+    justify-content: center;
     align-items: center;
-    gap: 27px;
+    gap: 2.7rem;
     color: var(--gray-100, #E6E8EB);
+    /* Display */
     font-family: Work Sans;
-    font-size: 72px;
+    font-size: 7.2rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 84px;
-    transform: translateX(-30px);
-    padding-bottom: 12px;
+    line-height: 8.4rem;
+    /* 116.667% */
+
 }
 
 .project .r_text .text_box p>span {
     color: var(--gray-900, #132238);
     font-family: Noto Sans KR;
-    font-size: 18px;
+    font-size: 3.6rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 2.4rem;
+    /* 66.667% */
 }
 
+.project .r_text .text_box>span {
+    color: #556070;
+    /* Body/Large/500 */
+    font-family: Noto Sans KR;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.1rem;
+    padding-bottom: 2rem;
+    /* 172.222% */
+}
 
 
 
@@ -372,7 +405,12 @@ nav ul li {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 12px;
+    gap: 1.2rem;
+}
+
+.project .r_text .text_box ul li::before {
+    content: "•";
+    margin-right: 1rem;
 }
 
 .project .r_text .text_box ul li {
@@ -391,7 +429,10 @@ nav ul li {
 
 .p_button {
     display: flex;
-    gap: 20px;
+    padding-top: 40px;
+    align-items: flex-start;
+    gap: 2rem;
+    align-self: stretch;
 }
 
 .p_button li {
@@ -400,7 +441,6 @@ nav ul li {
     border-radius: 4px;
     border: 1px solid var(--primary-500, #A53DFF);
     background: var(--gray-white, #FFF);
-    transform: translateX(-30px);
 }
 
 .p_button li a {
