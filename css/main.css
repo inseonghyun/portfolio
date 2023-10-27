@@ -35,10 +35,12 @@ nav {
     justify-content: space-between;
 }
 
-nav h1 img {
-    width: 50px;
-    height: 50px;
+nav #logo {
+    width: 7rem;
+    height: 7rem;
 }
+
+
 
 nav ul {
     display: flex;
@@ -290,7 +292,13 @@ nav ul li {
 
 /* about me */
 
-
+.projects .inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8rem;
+}
 
 .projects h3 {
     display: flex;
@@ -298,7 +306,6 @@ nav ul li {
     align-items: center;
     height: 128px;
     line-height: 128px;
-    margin-bottom: 70px;
     font-size: 48px;
     font-style: normal;
     font-weight: 700;
@@ -320,13 +327,16 @@ nav ul li {
     position: relative;
 }
 
+
 .project .l_img img {
     position: absolute;
 }
 
+
+
 .project .l_img img.pad {
     bottom: 0;
-    left: -3.9rem;
+    left: -3.5rem;
 }
 
 .project .l_img img.phone {
@@ -343,6 +353,7 @@ nav ul li {
     align-items: flex-start;
 }
 
+
 .project .r_text .text_box {
     display: flex;
     flex-direction: column;
@@ -351,6 +362,10 @@ nav ul li {
     gap: 1.2rem;
     padding-left: 4rem;
     position: relative;
+}
+
+.project .r_text.le .text_box {
+    padding-right: 4rem;
 }
 
 
@@ -392,13 +407,6 @@ nav ul li {
     padding-bottom: 2rem;
     /* 172.222% */
 }
-
-
-
-
-
-
-
 
 
 .project .r_text .text_box ul {
@@ -453,3 +461,121 @@ nav ul li {
     font-weight: 600;
     line-height: 24px;
 }
+
+.project .ri_img {
+    display: flex;
+    width: 74.9rem;
+    height: 56.7rem;
+    padding: 0rem 22.6rem 0rem 22.7rem;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.project .ri_img img {
+    width: 29.6rem;
+    height: 59.2rem;
+    flex-shrink: 0;
+}
+
+.project:last-child {
+    position: relative;
+    margin-bottom: 10rem;
+}
+
+.project:last-child:after {
+    position: absolute;
+    content: '';
+    width: 87.9209rem;
+    height: 87.703rem;
+    transform: rotate(-130.374deg);
+    flex-shrink: 0;
+    border-radius: 87.9209rem;
+    background: rgba(218, 77, 241, 0.40);
+    filter: blur(250px);
+    z-index: -9999;
+    top: -35rem;
+    left: -110rem;
+}
+
+/* projects */
+
+.skill {
+    background: var(--gray-50, #F0F1F3);
+}
+
+.skill .inner {
+    padding: 10rem 15rem 15rem 30rem;
+    display: flex;
+    width: 193.8rem;
+    height: 94.4rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.skill .tit {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5rem;
+}
+
+.skill .tit h3 {
+    color: #333;
+    /* Heading/01 */
+    font-family: Noto Sans KR;
+    font-size: 4.8rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 5.6rem;
+    /* 116.667% */
+}
+
+.skill .tit p {
+    color: var(--gray-400, #87909D);
+    /* Body/Large/400 */
+    font-family: Noto Sans KR;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 350;
+    line-height: 2.4rem;
+    /* 133.333% */
+}
+
+.skill .skill_bar {
+    display: flex;
+    width: 131.7rem;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.skill .skill_bar .ch_le {
+    display: flex;
+    width: 75.6rem;
+    align-items: center;
+    gap: 4.8rem;
+    flex-shrink: 0;
+}
+
+.skill .skill_bar .ch_ri {
+    display: flex;
+    width: 35.8rem;
+    align-items: center;
+    gap: 5rem;
+    flex-shrink: 0;
+}
+
+.skill .skill_bar .charts .chart {
+    display: flex;
+    width: 8.6rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 3rem;
+    flex-shrink: 0;
+    align-self: stretch;
+}
+
+
+
