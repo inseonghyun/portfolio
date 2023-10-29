@@ -502,13 +502,17 @@ nav ul li {
 
 .skill {
     background: var(--gray-50, #F0F1F3);
+    height: 500rem;
 }
 
 .skill .inner {
-    padding: 10rem 15rem 15rem 30rem;
+    padding: 10rem 30rem 15rem 30rem;
+}
+
+.skill .inner .box {
     display: flex;
-    width: 193.8rem;
-    height: 94.4rem;
+    width: 132rem;
+    height: 69.4rem;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
@@ -550,7 +554,7 @@ nav ul li {
     align-items: flex-end;
 }
 
-.skill .skill_bar .ch_le {
+.skill .skill_bar .coding{
     display: flex;
     width: 75.6rem;
     align-items: center;
@@ -558,15 +562,16 @@ nav ul li {
     flex-shrink: 0;
 }
 
-.skill .skill_bar .ch_ri {
+.skill .skill_bar .design {
     display: flex;
     width: 35.8rem;
     align-items: center;
     gap: 5rem;
     flex-shrink: 0;
+
 }
 
-.skill .skill_bar .charts .chart {
+.skill .skill_bar .chart {
     display: flex;
     width: 8.6rem;
     flex-direction: column;
@@ -575,7 +580,60 @@ nav ul li {
     gap: 3rem;
     flex-shrink: 0;
     align-self: stretch;
+
+}
+
+.chart .bar_box {
+    position: relative;
+    width: 249px;
+    height: 21px;
+    transform: rotate(-90deg);
+    fill: var(--gray-100, #E6E8EB);
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25) inset;
+    border-radius: 10px;
+    display: inline-block;
 }
 
 
+.chart .bar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: #B764FF;
+    width: 0;
+    box-shadow: (2px 3px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 10px;
+}
 
+.chart .text_box {
+    position: absolute;
+    top: 0;
+    transform: rotate(90deg);
+    bottom: 0;
+    right: -12rem;
+    text-align: center;
+    display: flex;
+    width: 5.4rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.chart .text_box p {
+    color: var(--gray-500, #697484);
+    text-align: center;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.4rem;
+}
+
+.chart .text_box .rate {
+    color: var(--gray-700, #424E60);
+    text-align: center;
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4rem;
+}
