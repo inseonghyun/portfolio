@@ -18,7 +18,7 @@ function animateChart() {
         var item = $(this);
         var title = item.find('h2');
         var targetNum = title.attr('data-num');
-        var circle = item.find('');
+        var circle = item.find('line');
 
         $({ rate: 0 }).animate(
             { rate: targetNum },
