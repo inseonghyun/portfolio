@@ -218,42 +218,162 @@
         </section>
         <section class="skill">
             <div class="inner">
-                <div class="tit">
-                    <h3>Skill</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab quisquam assumenda, minima possimus
-                        quaerat architecto commodi facilis ex tempore eaque aut inventore aperiam, eos molestiae dolorem
-                        et
-                        consequuntur odit nulla.
-                    </p>
-                </div>
-                <div class="skill_bar">
-                    <div class="charts ch_le">
-                        <div class="chart">
-                            <h2 data-num="20">0</h2>
+                <div class="box">
+                    <div class="tit">
+                        <h3>Skill</h3>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab quisquam assumenda, minima
+                            possimus
+                            quaerat architecto commodi facilis ex <br>tempore eaque aut inventore aperiam, eos molestiae
+                            dolorem
+                            etconsequuntur odit nulla.
+                        </p>
+                    </div>
+                    <div class="skill_bar">
+                        <div class="coding">
+                            <div class="chart">
+                                <div class="bar_box">
+                                    <div class="bar"></div>
+                                    <div class="text_box">
+                                        <p>HTML</p>
+                                        <div class="rate" data-rate="90">0</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart">
+                                <div class="bar_box">
+                                    <div class="bar"></div>
+                                    <div class="text_box">
+                                        <p>CSS</p>
+                                        <div class="rate" data-rate="80">0</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart">
+                                <div class="bar_box">
+                                    <div class="bar"></div>
+                                    <div class="text_box">
+                                        <p>SCSS</p>
+                                        <div class="rate" data-rate="80">0</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart">
+                                <div class="bar_box">
+                                    <div class="bar"></div>
+                                    <div class="text_box">
+                                        <p>JS</p>
+                                        <div class="rate" data-rate="70">0</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart">
+                                <div class="bar_box">
+                                    <div class="bar"></div>
+                                    <div class="text_box">
+                                        <p>JQUERY</p>
+                                        <div class="rate" data-rate="70">0</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart">
+                                <div class="bar_box">
+                                    <div class="bar"></div>
+                                    <div class="text_box">
+                                        <p>GIT</p>
+                                        <div class="rate" data-rate="80">0</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="design">
+                            <div class="chart">
+                                <div class="bar_box">
+                                    <div class="bar"></div>
+                                    <div class="text_box">
+                                        <p>PS</p>
+                                        <div class="rate" data-rate="70">0</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart">
+                                <div class="bar_box">
+                                    <div class="bar"></div>
+                                    <div class="text_box">
+                                        <p>AI</p>
+                                        <div class="rate" data-rate="80">0</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart">
+                                <div class="bar_box">
+                                    <div class="bar"></div>
+                                    <div class="text_box">
+                                        <p>FIGMA</p>
+                                        <div class="rate" data-rate="80">0</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="charts ch_ri">
-                        <div class="chart">
-                            <h2 data-num="20">0</h2>
-                            <svg>
-                                <line x1="0" y1="0" x2="500" y2="0"></line>
-                            </svg>
+                </div>
+            </div>
+        </section>
+        <section class="design_projects">
+            <div class="inner">
+                <div class="content">
+                    <div class="tit_wrap">
+                        <div class="tit">
+                            <p>Design Projects</p>
+                            <span>디자인작업물</span>
+                        </div>
+                    </div>
+                    <div class="img_wrap">
+                        <div class="img_box">
+                            <div class="mokup">
+                                <div class="img">
+                                    <div class="bo_text"><span>명함디자인</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="img_box">
+                            <div class="mokup">
+                                <div class="img">
+                                    <div class="bo_text"><span>명함디자인</span></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
     </div>
-
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
     <script>var animation = bodymovin.loadAnimation({
             container: document.getElementById('logo'), // Required
-            path: './ani.json', // Required
+            path: './logo_ani.json', // Required
             renderer: 'svg', // Required
             loop: true, // Optional
             autoplay: true, // Optional
-        })</script>
+        })
+    </script>
+    <script>var animation = bodymovin.loadAnimation({
+            container: document.querySelector('.l_img'), // Required
+            path: './about_ani.json', // Required
+            renderer: 'svg', // Required
+            loop: true, // Optional
+            autoplay: true, // Optional
+        })
+    </script>
+    <script>var animation = bodymovin.loadAnimation({
+            container: document.querySelector('.banner_img'), // Required
+            path: './main_ani.json', // Required
+            renderer: 'svg', // Required
+            loop: true, // Optional
+            autoplay: true, // Optional
+        })
+    </script>
+
+
 </body>
 
 </html>
