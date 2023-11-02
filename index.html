@@ -33,9 +33,16 @@
                     <h2>Insight</h2>
                     <p>문제의 본질 꿰뚫는<br>퍼블리셔 <span>인성현</span></p>
                     <div class="main_button">
-                        <p><a href="https://drive.google.com/file/d/13fB-WqjwS2hF84Z7QHiZrFJVaPGmALXM/view?usp=sharing">이력서
-                                보기</a></p>
-                        <p><a href="https://github.com/inseonghyun">깃허브 바로가기</a></p>
+                        <p>
+                            <a
+                                href="https://drive.google.com/file/d/13fB-WqjwS2hF84Z7QHiZrFJVaPGmALXM/view?usp=sharing">
+                                이력서보기
+                            </a>
+                            <img src="/img/icon/mainb_left.png" alt="">
+                        </p>
+                        <p><a href="https://github.com/inseonghyun">깃허브 바로가기</a>
+                            <img src="/img/icon/mainb_right.png" alt="">
+                        </p>
                     </div>
                 </div>
                 <div class="banner_img">
@@ -106,16 +113,16 @@
                                 <li>특징 : 웹 접근성</li>
                             </ul>
                         </div>
-                        <ul class="p_button">
-                            <li><a href="https://inseonghyun.github.io/project2-1/">구현화면보기<img
-                                        src="./img/icon/b_icon.svg" alt=""></a></li>
-                            <li><a href="https://github.com/inseonghyun/project2-1">깃허브보기<img
-                                        src="./img/icon/b_icon2.svg" alt=""></a></li>
-                            <li><a href="#">기획서보기<img src="./img/icon/b_icon.svg" alt="#"></a></li>
-                        </ul>
+                        <div class="p_button">
+                            <a href="https://inseonghyun.github.io/project2-1/">구현화면보기<img src="./img/icon/b_icon.svg"
+                                    alt=""></a>
+                            <a href="https://github.com/inseonghyun/project2-1">깃허브보기<img src="./img/icon/b_icon2.svg"
+                                    alt=""></a>
+                            <a href="#">기획서보기<img src="./img/icon/b_icon.svg" alt="#"></a>
+                        </div>
                     </div>
                 </div>
-                <div class="project">
+                <div class="project mobile">
                     <div class="r_text le">
                         <div class="text_box">
                             <p>03
@@ -137,11 +144,11 @@
                                 <li>특징 : 피그마를 이용한 앱 제작</li>
                             </ul>
                         </div>
-                        <ul class="p_button">
-                            <li><a href="#">구현화면보기<img src="./img/icon/b_icon.svg" alt="#"></a></li>
-                            <li><a href="#">깃허브보기<img src="./img/icon/b_icon2.svg" alt="#"></a></li>
-                            <li><a href="#">기획서보기<img src="./img/icon/b_icon.svg" alt="#"></a></li>
-                        </ul>
+                        <div class="p_button">
+                            <a href="#">구현화면보기<img src="./img/icon/b_icon.svg" alt="#"></a>
+                            <a href="#">깃허브보기<img src="./img/icon/b_icon2.svg" alt="#"></a>
+                            <a href="#">기획서보기<img src="./img/icon/b_icon.svg" alt="#"></a>
+                        </div>
                     </div>
                     <div class="figma">
                         <div class="crop">
@@ -262,6 +269,7 @@
                         <div class="img_box">
                             <div class="mokup">
                                 <div class="img">
+                                    <img src="./img/mok.jpg" alt="" data-src="sub_page/1.html" class="pic" />
                                     <div class="bo_text"><span>명함디자인</span></div>
                                 </div>
                             </div>
@@ -295,6 +303,9 @@
                 </div>
             </div>
         </footer>
+        <div id="lightbox">
+            <div id="lightImage"></div>
+        </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
     <script>var animation = bodymovin.loadAnimation({
