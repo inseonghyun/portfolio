@@ -22,12 +22,12 @@ body {
     float: right;
 }
 
-header {
-    background: #fff;
-}
-
 header .inner {
     padding: 2rem 30rem;
+    position: fixed;
+    z-index: 99999;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(0.1rem);
 }
 
 nav {
@@ -73,23 +73,25 @@ nav ul li {
 
 }
 
+
 .banner .main_text h2 {
     color: var(--gray-900, #132238);
-    /* Display */
     font-family: Work Sans;
-    font-size: 72px;
+    font-size: 7.2rem;
     font-style: normal;
     font-weight: 600;
-    line-height: 84px;
-    /* 116.667% */
-
+    line-height: 8.4rem;
+    position: relative;
 }
 
-.pink {
+.banner .main_text h2::before {
+    content: '';
+    width: 24rem;
+    height: 5.8rem;
+    position: absolute;
+    top: 1.5rem;
     background: #FFC8C8;
     mix-blend-mode: multiply;
-    width: 240px;
-    height: 58px;
 }
 
 .banner .main_text>p {
@@ -101,6 +103,21 @@ nav ul li {
     font-weight: 600;
     line-height: 84px;
     padding: 24px 0
+}
+
+.banner .main_text>p span {
+    position: relative;
+}
+
+.banner .main_text>p span::before {
+    content: '';
+    width: 18.8rem;
+    height: 4.3rem;
+    position: absolute;
+    right: 1.0rem;
+    bottom: 1.3rem;
+    background: #FFC8C8;
+    mix-blend-mode: multiply;
 }
 
 .banner .main_text .main_button {
@@ -471,7 +488,7 @@ nav ul li {
     line-height: 24px;
 }
 
-.project .ri_img {
+/* .project .ri_img {
     display: flex;
     width: 74.9rem;
     height: 56.7rem;
@@ -485,6 +502,37 @@ nav ul li {
     width: 29.6rem;
     height: 59.2rem;
     flex-shrink: 0;
+} */
+.project.p4 {
+    align-items: center;
+}
+
+.figma {
+    position: relative;
+    margin: auto;
+    width: 478px;
+    height: 978px;
+    background: url(../img/phone.png)no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+.crop {
+    position: absolute;
+    overflow: hidden;
+    width: 430px;
+    height: 932px;
+    left: 23px;
+    top: 22px;
+    border-radius: 60px;
+}
+
+.crop iframe {
+    display: block;
+    position: absolute;
+    width: 430px;
+    height: 935px;
+    overflow: hidden;
 }
 
 .project:last-child {
@@ -523,7 +571,7 @@ nav ul li {
 .skill .inner .box {
     display: flex;
     width: 192rem;
-    height: 70rem;
+    height: 55rem;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
@@ -764,4 +812,72 @@ nav ul li {
 
 footer {
     background-color: #2B384C;
+    display: flex;
+    padding: 10rem 0rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+footer .top_text {
+    display: flex;
+    padding: 3rem 0rem 5rem 0rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 6rem;
+}
+
+footer .top_text p {
+    color: #FFF;
+    font-family: Noto Sans KR;
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+footer .top_text span {
+    color: #FFF;
+    font-family: Noto Sans KR;
+    font-size: 3.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+footer .top_text .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+footer .top_text .tell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+
+}
+
+footer .copyright {
+    display: flex;
+    height: 12rem;
+    justify-content: center;
+    align-items: center;
+    gap: 20rem;
+}
+
+footer .copyright>span {
+    color: var(--gray-white, #FFF);
+    font-family: Noto Sans KR;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 350;
+    line-height: 2.4rem;
+}
+
+footer .copyright .logo {
+    width: 7rem;
+    height: 7rem;
 }
