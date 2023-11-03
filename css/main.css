@@ -22,12 +22,15 @@ body {
     float: right;
 }
 
-header .inner {
-    padding: 2rem 30rem;
+
+header{
+    padding: 2rem 0;
     z-index: 99999;
+    position: fixed;
+    left: 0;
+    right: 0;
     background-color: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(0.1rem);
-    position: fixed;
 
 }
 
@@ -725,13 +728,40 @@ nav ul li {
 
 .design_projects {
     display: flex;
-    width: 192rem;
     height: 90rem;
-    padding: 19rem 8.8rem 0rem 8.8rem;
     flex-direction: column;
     align-items: center;
     gap: 2.4rem;
-    position: relative;
+}
+
+.design_projects .content::after {
+    content: '';
+    position: absolute;
+    right: 140rem;
+    top: 54rem;
+    width: 54.3149rem;
+    height: 22.8682rem;
+    transform: rotate(-29.806deg);
+    flex-shrink: 0;
+    border-radius: 54.3149rem;
+    background: linear-gradient(182deg, #FFDFA8 -157.44%, rgba(255, 226, 176, 0.96) -157.4%, rgba(255, 234, 198, 0.67) 216.94%, rgba(250, 211, 144, 0.80) 216.94%);
+    filter: blur(100px);
+    z-index: -999;
+}
+
+.design_projects .content::before {
+    content: '';
+    position: absolute;
+    left: 114rem;
+    top: 20rem;
+    width: 105.3899rem;
+    height: 105.1288rem;
+    transform: rotate(-130.374deg);
+    flex-shrink: 0;
+    border-radius: 105.3899rem;
+    background: rgba(196, 245, 233, 0.70);
+    filter: blur(300px);
+    z-index: -999;
 }
 
 .design_projects .content {
@@ -740,8 +770,7 @@ nav ul li {
     flex-direction: column;
     align-items: center;
     gap: 7rem;
-    position: absolute;
-    right: 34.6rem;
+    position: relative;
     top: -2.8rem;
     background: var(--gray-white, #fff);
     box-shadow: 0px 59px 124px 0px rgba(0, 0, 0, 0.12);
@@ -850,7 +879,21 @@ footer {
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    position: relative;
 }
+
+footer::after {
+    content: '';
+    position: absolute;
+    width: 148.1rem;
+    height: 148.2rem;
+    flex-shrink: 0;
+    border-radius: 148.2rem;
+    background: linear-gradient(182deg, rgba(255, 234, 198, 0.20) -157.44%, rgba(255, 234, 198, 0.14) 216.94%, rgba(255, 234, 198, 0.13) 216.94%);
+    filter: blur(350px);
+    z-index: -99;
+}
+
 
 footer .top_text {
     display: flex;
