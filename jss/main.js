@@ -3,7 +3,6 @@ $(function () {
     const animaionOST = $('.skill_bar').offset().top - 600;
     let isAni = false;
     $(window).on('scroll', function () {
-        //윈도우의 스크롤 탑값이 animaionOST값보다 크거나 같고 isAni의 값이 false 면 조건문 실행 => 윈도우의 스크롤바가 스킬바섹션 안으로 진입했고 애니메이션은 미실행 상태
         if ($(window).scrollTop() >= animaionOST && !isAni) {
             progressAnimation();
         }
@@ -23,7 +22,6 @@ $(function () {
                     {
                         duration: 2000, progress: function () {
                             let now = this.rate;
-                            //progressText.text(Math.floor(now) + '%');
                             progressText.text(Math.floor(now));
                         },
                         complete: function () {
@@ -34,7 +32,7 @@ $(function () {
             }; textFn();
         });
     };
-}); // jQuery
+});
 
 const pics = $(".pic");
 const lightbox = $("#lightbox");
@@ -49,4 +47,36 @@ pics.on('click', function () {
 lightbox.on('click', function () {
     lightbox.css('display', 'none');
     $('html').removeClass('all_scrollFixed');
+})
+
+//ani
+var animation1 = bodymovin.loadAnimation({
+    container: document.getElementById('logo'), // Required
+    path: '../logo_ani.json', // Required
+    renderer: 'svg', // Required
+    loop: true, // Optional
+    autoplay: true, // Optional
+})
+var animation2 = bodymovin.loadAnimation({
+    container: document.querySelector('.logo'), // Required
+    path: '../logo_ani.json', // Required
+    renderer: 'svg', // Required
+    loop: true, // Optional
+    autoplay: true, // Optional
+})
+
+var animation3 = bodymovin.loadAnimation({
+    container: document.querySelector('.l_img'), // Required
+    path: '../about_ani.json', // Required
+    renderer: 'svg', // Required
+    loop: true, // Optional
+    autoplay: true, // Optional
+})
+
+var animation4 = bodymovin.loadAnimation({
+    container: document.querySelector('.banner_img'), // Required
+    path: '../main_ani.json', // Required
+    renderer: 'svg', // Required
+    loop: true, // Optional
+    autoplay: true, // Optional
 })
