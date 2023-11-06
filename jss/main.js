@@ -52,7 +52,7 @@ lightbox.on('click', function () {
 //ani
 var animation1 = bodymovin.loadAnimation({
     container: document.getElementById('logo'), // Required
-    path: '../logo_ani.json', // Required
+    path: './/logo_ani.json', // Required
     renderer: 'svg', // Required
     loop: true, // Optional
     autoplay: true, // Optional
