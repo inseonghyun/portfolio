@@ -59,7 +59,7 @@ var animation1 = bodymovin.loadAnimation({
 })
 var animation2 = bodymovin.loadAnimation({
     container: document.querySelector('.logo'), // Required
-    path: '../logo_ani.json', // Required
+    path: './/logo_ani.json', // Required
     renderer: 'svg', // Required
     loop: true, // Optional
     autoplay: true, // Optional
@@ -67,7 +67,7 @@ var animation2 = bodymovin.loadAnimation({
 
 var animation3 = bodymovin.loadAnimation({
     container: document.querySelector('.l_img'), // Required
-    path: '../about_ani.json', // Required
+    path: './/about_ani.json', // Required
     renderer: 'svg', // Required
     loop: true, // Optional
     autoplay: true, // Optional
@@ -75,7 +75,7 @@ var animation3 = bodymovin.loadAnimation({
 
 var animation4 = bodymovin.loadAnimation({
     container: document.querySelector('.banner_img'), // Required
-    path: '../main_ani.json', // Required
+    path: './/main_ani.json', // Required
     renderer: 'svg', // Required
     loop: true, // Optional
     autoplay: true, // Optional
