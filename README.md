@@ -4,7 +4,7 @@
 
 한 두 문단으로 프로젝트 소개 글을 작성합니다.
 
-![]()
+![](https://drive.google.com/file/d/1fVLI1mlDwqUX71YPC2mS315o54-7kYf6/view?usp=drive_link)
 
 
 ## 콘셉트 도출
