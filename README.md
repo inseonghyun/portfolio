@@ -16,7 +16,7 @@
 > 저를 브랜딩 하기 위해 아이디어 도출의 첫단계로 마인드 맵을 작성하였습니다.
 
 ## 스타일가이드
-![](https://user-images.githubusercontent.com/142187079/281604780-fffdaf71-801d-4ae5-9f80-ccabfaca14cf.png)
+![](https://user-images.githubusercontent.com/142187079/281627205-65c6c7c2-48c3-4b1d-94bd-fb75aeda9d1c.png)
 
 ## 와이어프레임 스케치
 

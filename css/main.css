@@ -799,6 +799,7 @@ nav ul li {
     gap: 4rem;
 }
 
+
 .img_wrap .img_box {
     display: flex;
     flex-direction: column;
@@ -809,6 +810,7 @@ nav ul li {
     background: var(--gray-white, #FFF);
 }
 
+
 .img_wrap .img_box .mokup {
     display: flex;
     width: 50rem;
@@ -818,6 +820,7 @@ nav ul li {
     align-items: center;
     gap: 1rem;
 }
+
 
 .img_wrap .img_box .mokup .img {
     width: 50rem;
@@ -833,6 +836,7 @@ nav ul li {
     height: 100%;
 }
 
+
 .img_wrap .img_box .mokup .img .bo_text {
     display: flex;
     width: 50rem;
@@ -845,6 +849,7 @@ nav ul li {
     background: var(--primary-400, #B764FF);
     mix-blend-mode: hard-light;
 }
+
 
 /* .design_projects {
     display: none;
