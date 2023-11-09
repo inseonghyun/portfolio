@@ -4,7 +4,7 @@
 
 한 두 문단으로 프로젝트 소개 글을 작성합니다.
 
-![]()
+![](https://user-images.githubusercontent.com/142187079/281604459-548916a9-639f-4246-8305-fd8ae8221373.PNG)
 
 
 ## 콘셉트 도출
@@ -12,11 +12,11 @@
 
 
 ## 마인드맵
-![]()
+![](https://user-images.githubusercontent.com/142187079/281604603-e3702826-c25d-4cce-b85d-1635cba0cd0a.PNG)
 > 저를 브랜딩 하기 위해 아이디어 도출의 첫단계로 마인드 맵을 작성하였습니다.
 
 ## 스타일가이드
-![]()
+![](https://user-images.githubusercontent.com/142187079/281604780-fffdaf71-801d-4ae5-9f80-ccabfaca14cf.png)
 
 ## 와이어프레임 스케치
 
