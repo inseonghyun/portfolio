@@ -22,6 +22,21 @@ body {
     float: right;
 }
 
+nav h1 {
+    text-indent: 99999999;
+}
+
+section h3 {
+    text-indent: 99999999;
+    display: none;
+    overflow: hidden;
+}
+
+nav h1 a {
+    text-indent: 99999999;
+    display: none;
+    overflow: hidden;
+}
 
 header {
     padding: 2rem 0;
@@ -367,7 +382,7 @@ nav ul li {
     position: relative;
 }
 
-.project .l_img img.pc::before {}
+
 
 
 .project .l_img img.pad {
