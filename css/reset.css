@@ -4,6 +4,8 @@
  v2.0 | 20110126
  License: none (public domain)
 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 @font-face {
     font-family: 'GmarketSansMedium';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
@@ -11,7 +13,19 @@
     font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+:root {
+    --primary-400: #B764FF;
+    --primary-500: #A53DFF;
+    --gray-50: #F0F1F3;
+    --gray-100: #E6E8EB;
+    --gray-400: #87909D;
+    --gray-500: #697484;
+    --gray-600: #556070;
+    --gray-700: #424E60;
+    --gray-900: #132238;
+    --gray-white: #fff;
+
+}
 
 html,
 body,
